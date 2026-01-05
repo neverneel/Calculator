@@ -21,3 +21,9 @@ function calculate(){
         display.value = "error";
     }
 }
+
+document.addEventListener("keydown", (e)=>{
+    if(e.key >= "0" && e.key <= "9" ){
+        appendToDisplay(e.key);
+    }
+})
